@@ -1,142 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-es">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Práctica</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+  </head>
+  <body> <img src="img_html/logo-uoc-default.png" alt="" title="UOC" style="width: 83px; height: 70px;">
+    <div id="titulo">
+      <h2>Ejercicio 1: Clip de vídeo incrustado en HTML 5</h2>
+    </div>
+    <div id="titulo_peque">
+      <h2>Tarea 1.1</h2>
+    </div>
+    <p> Partiendo de la base de crear un contenido en el formato para que fuese
+      fácilmente reproducible por la mayoría de los navegadores actuales y
+      siguiendo la tabla adjunta de compatibilidad con navegadores: </p>
+    <table style="font-size: 10px; width: 416px; height: 356px;" cellspacing="0"
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Ejercicio 1</title>
-</head>
+      cellpadding="5" border="1">
+      <caption><span style="font-family: Calibri;">Tabla comparativa de
+          navegadores para PC</span></caption>
+      <thead>
+        <tr style="text-align: center;">
+          <th><span style="font-family: Calibri;">Navegador</span></th>
+          <th><span style="font-family: Calibri;">Versión</span></th>
+          <th><span style="font-family: Calibri;">Reproductor</span></th>
+          <th><span style="font-family: Calibri;">Formato</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;"><span style="font-family: Calibri;"><img
 
-<body>
+                title="Internet Explorer" src="https://www.e-sort.net/blog/wp-content/uploads/2011/01/LOGO_IE-e1294418955380.jpg"
 
-<p id="punto1"></p>
-<div id="titulillo"><h2>Ejercicio 1: Clip de video incrustado en HTML 5</h2></div>
+                alt="" class=" original_width" height="40" width="40"></span></td>
+          <td style="text-align: center; font-size: 12px;"><span style="font-family: Calibri;">9</span></td>
+          <td><span style="font-family: Calibri;">Windows Media Player</span></td>
+          <td><span style="font-family: Calibri;">WMV&nbsp; <strong>Ogg/Theora</strong>
+              y VP8/WebM (*) <strong> </strong>H.264/MP4</span></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 8px; text-align: center;"><span style="font-family: Calibri;"><img
 
-El formato HTML5 permite insertar vídeo directamente, pero existe un inconveniente, no todos los navegadores aceptan todos los formatos de vídeo existentes. De hecho, de los 3 estándares existentes, el único navegador que los acepta a todos es Chrome.<br><br>
-Así que, si queremos que el vídeo se pueda visualizar en todos los navegadores tendremos que añadir el mismo vídeo en distintos los 3 formatos de video estándares con códecs diferentes y que vienen impulsados por grandes empresas<br><br>
+                title="Mozilla FireFox" src="https://www.e-sort.net/blog/wp-content/uploads/2011/01/LOGO_FireFox-e1294420264741.jpg"
 
-	<div id="celda1">
-		<div id="imagen1">
-			<img src="./img_html/mp4.png">
-		</div>
-			El formato <b>MP4</b> (ficheros con extensión .mp4 o .mov) que bajo licencia utiliza el códec H264 (el mismo que utiliza Flash).  Es impulsado por Apple y Microsoft.
-	</div>
-	<div id="celda1">
-		<div id="imagen1">
-			<img src="img_html/ogg.png">
-		</div>
-			El formato <b>OGG</b> (ficheros con extensión .ogv) que utiliza el códec On2VP8 es gratuito.<br>Impulsado por Mozilla, Opera y Firefox.
-	</div>
-	<div id="celda1">
-		<div id="imagen2">
-			<img src="img_html/webm.png">
-		</div>
-			El formato <b>WebM</b> (ficheros con extensión .webm) también es gratuito e impulsado por los mismos que apoyan el formato OGG (Mozilla, Opera y Firefox).
-	</div>
-<p></p>
+                alt="" class=" original_width" height="39" width="40"></span></td>
+          <td style="text-align: center; font-size: 12px;"><span style="font-family: Calibri;">10</span></td>
+          <td><span style="font-family: Calibri;">xiph</span></td>
+          <td><span style="font-family: Calibri;"><strong>Ogg/Theora </strong>y
+              VP8/WebM&nbsp; <strong> </strong>H.264/MP4 (*)</span></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 8px; text-align: center;"><span style="font-family: Calibri;"><img
 
-	
-<p id="punto2"></p>
-<div id="titulillo"><h2>Compatibilidad con navegadores</h2></div>
+                title="Google Chrome" src="https://www.e-sort.net/blog/wp-content/uploads/2011/01/LOGO_Chrome.jpg"
 
-La tabla de los diferentes formatos de vídeo aceptados por los diferentes navegadores queda así:<br><br><br>
-<table border=0>
-		<tr>
-			<td></td>
-			<th>MP4</td>
-			<th>OGG</td>
-			<th>WebM</td>
-		</tr>
-		<tr>
-			<th>Firefox</th>
-			<td>-</td>
-			<td>+3.5</td>
-			<td>+4.0</td>
-		</tr>
-		<tr>
-			<th>Chrome</th>
-			<td>+3.0</td>
-			<td>+3.0</td>
-			<td>+3.0</td>
-		</tr>
-		<tr>
-			<th>Opera</th>
-			<td>-</td>
-			<td>+10.5</td>
-			<td>+10.6</td>
-		</tr>
-		<tr>
-			<th>Safari</th>
-			<td>+3.1</td>
-			<td>-</td>
-			<td>-</td>
-		</tr>
-		<tr>
-			<th>IExplorer</th>
-			<td>+IE9</td>
-			<td>-</td>
-			<td>-</td>
-		</tr>
-</table><br>
+                alt="" class=" original_width" width="40"></span></td>
+          <td style="text-align: center; font-size: 12px;"><span style="font-family: Calibri;">17</span></td>
+          <td><span style="font-family: Calibri;">ffmpeg</span></td>
+          <td><span style="font-family: Calibri;"><strong>Ogg/Theora </strong>y
+              VP8/WebM&nbsp; <strong> </strong>H.264/MP4</span></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 8px; text-align: center;"><span style="font-family: Calibri;"><img
 
+                title="Safari" src="https://www.e-sort.net/blog/wp-content/uploads/2011/01/LOGO_Safari-e1294421403472.jpg"
 
-<p id="punto3"></p>
-<div id="titulillo"><h2>&lt;video&gt;</h2></div>
+                alt="" class=" original_width" height="45" width="40"></span></td>
+          <td style="text-align: center; font-size: 12px;"><span style="font-family: Calibri;">5</span></td>
+          <td><span style="font-family: Calibri;">QuickTime</span></td>
+          <td><span style="font-family: Calibri;">H.264/MOV/M4V&nbsp; <strong>Ogg/Theora
+                </strong>y VP8/WebM (*)</span></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 8px; text-align: center;"><span style="font-family: Calibri;"><img
 
-El código HTML estándar para visualizar un único formato de vídeo sería:<br>
-<div class="codigo">
-	<pre>
-&lt;video&gt;
+                title="Opera" src="https://www.e-sort.net/blog/wp-content/uploads/2011/01/LOGO_Opera-e1294422716463.jpg"
+
+                alt="" class=" original_width" height="34" width="40"></span></td>
+          <td style="text-align: center; font-size: 12px;"><span style="font-family: Calibri;">11</span></td>
+          <td><span style="font-family: Calibri;">GStreamer</span></td>
+          <td><span style="font-family: Calibri;"><strong>Ogg/Theora </strong>y
+              VP8/WebM</span></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 8px; text-align: center;"><span style="font-family: Calibri;"><a
+
+                href="https://www.e-sort.net/blog/wp-content/uploads/2012/02/epiphany-64.png"><img
+
+                  class="aligncenter size-full wp-image-2335 original_width" title="epiphany-64"
+
+                  src="https://www.e-sort.net/blog/wp-content/uploads/2012/02/epiphany-64.png"
+
+                  alt="" height="40" width="40"></a></span></td>
+          <td style="text-align: center; font-size: 12px;"><span style="font-family: Calibri;">3</span></td>
+          <td><span style="font-family: Calibri;">GStreamer</span></td>
+          <td><span style="font-family: Calibri;"><strong>Ogg/Theora </strong>y
+              VP8/WebM&nbsp; H.264/MP4 (*)</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>He codificado mi video en formato MP4, WebM y Ogg ya que son los más
+      comunes y soportados por la mayoría de los navegadores, para ello me he
+      valido de la herramienta de avidemux (MP4 y WebM) y un conversor en línea
+      para poder convertirlo a Ogg. El video está realizado con un formato de
+      Full HD de 1920x1080 y una velocidad de refresco de 60 frames/s. </p>
+    <img src="img_html/T11.png" alt="" title="MediaInfoReport"><br>
+    <div id="titulo_peque">
+      <h2>Tarea 1.2</h2>
+    </div>
+    <p> El formato HTML5 permite insertar vídeo directamente, pero existe un
+      inconveniente, no todos los navegadores aceptan todos los formatos de
+      vídeo existentes. De hecho, de los 3 estándares existentes, el único
+      navegador que los acepta a todos es Chrome. </p>
+    <p>Así que, si queremos que el vídeo se pueda visualizar en todos los
+      navegadores tendremos que añadir el mismo vídeo en distintos los 3
+      formatos de vídeo estándares con códecs diferentes y que vienen impulsados
+      por grandes empresas. </p>
+    <div id="celda1">
+      <div id="imagen1"> <img src="img_html/mp4.png"> </div>
+      El formato <b>MP4</b> (ficheros con extensión .mp4 o .mov) que bajo
+      licencia utiliza el códec H264 (el mismo que utiliza Flash). Es impulsado
+      por Apple y Microsoft. </div>
+    <div id="celda1">
+      <div id="imagen1"> <img src="img_html/ogg.png"> </div>
+      El formato <b>OGG</b> (ficheros con extensión .ogv) que utiliza el códec
+      On2VP8 es gratuito.<br>
+      Impulsado por Mozilla, Opera y Firefox. </div>
+    <div id="celda1">
+      <div id="imagen2"> <img src="img_html/webm.png"> </div>
+      El formato <b>WebM</b> (ficheros con extensión .webm) también es gratuito
+      e impulsado por los mismos que apoyan el formato OGG (Mozilla, Opera y
+      Firefox). </div>
+    <div id="titulo_peque">
+      <h2>Tarea 1.3</h2>
+    </div>
+    <p> Para poder publicar mi página web estática he utilizado el CDN de
+      Microsoft Azure. La experiencia para poder publicar está página ha sido
+      realmente sencilla. Ya que con el asistente que proporciona Azure y mi
+      cuenta que ya disponía en GitHub, he podido enlazar el repositorio y el
+      servicio del CDN.</p>
+    <img src="img_html/T13a.png" alt="" title="Azure Static Web">
+    <p> La experiencia a nivel de usuario ha sido positiva, ya que la velocidad
+      de respuesta del vídeo es muy aceptable. No he notado retrasos en la
+      entrega, ni saltos en las imágenes. Todo se comporta de forma muy fluida.
+    </p>
+    <div id="titulo_peque">
+      <h2>Tarea 1.4</h2>
+    </div>
+    <p> El código HTML estándar para visualizar un único formato de vídeo sería:<br>
+    </p>
+    <div class="codigo">
+      <pre>&lt;video&gt;
    &lt;source src="video.ogv" type="video/ogg"/&gt;
 &lt;/video&gt;
-</pre>
-</div>
-<p></p>
-En el tag <b>&lt;video&gt;</b> es posible incorporar un gran número de atributos que nos ayudan a poder controlar mejor el video, como son:<br>
-<ul>
-
-<li><b>width:</b> Indica la anchura del vídeo, expresada en píxeles (px) o en porcentaje (%)</li>
-<li><b>height:</b> Indica la altura del vídeo, expresada en píxeles (px) o en porcentaje (%)</li>
-<li><b>controls:</b> Establece si tendrá la barra de navegación (play, stop, volumen...) o no</li>
-<li><b>autoplay:</b> Indica si el vídeo se inicia detenido o ya aparece por defecto reproduciéndose</li>
-<li><b>loop:</b> Establece si al acabar el vídeo, éste debe volver a empezar o no</li>
-<li><b>muted:</b> Indica si el audio se reproduce o se reproduce sin audio</li>
-<li><b>preload:</b> Indica si el vídeo se empieza a cargar cuando el navegador carga la página html</li>
-<li><b>poster:</b> Da la posibilidad de establecer una imagen (jpg, gif o png) como fotograma inicial del video</li>
-</ul>
-<br>
-Por lo tanto, si utilizásemos todos los atributos, el código anterior quedaría de la siguiente manera:
-
-
-Si queremos que el vídeo se pueda visualizar desde cualquier navegador (que soporte HTML5), tenemos que añadir a este código más posibilidades y por lo tanto tenemos que tener el vídeo grabado en diferentes formatos.<br><br>
-El código HTML completo quedaría así:<br>
-<div class="codigo">
-	<pre>
-&lt;video width="800" height="600" controls autoplay loop poster="fotograma.png"&gt;
+</pre> </div>
+    <p></p>
+    <span style="font-family: Calibri;">En el tag <b>&lt;video&gt;</b> es
+      posible incorporar un gran número de atributos que nos ayudan a poder
+      controlar mejor el video, como son:<br>
+    </span>
+    <ul>
+      <li><span style="font-family: Calibri;"><b>width:</b> Indica la anchura
+          del vídeo, expresada en píxeles (px) o en porcentaje (%)</span></li>
+      <li><span style="font-family: Calibri;"><b>height:</b> Indica la altura
+          del vídeo, expresada en píxeles (px) o en porcentaje (%)</span></li>
+      <li><span style="font-family: Calibri;"><b>controls:</b> Establece si
+          tendrá la barra de navegación (play, stop, volumen...) o no</span></li>
+      <li><span style="font-family: Calibri;"><b>autoplay:</b> Indica si el
+          vídeo se inicia detenido o ya aparece por defecto reproduciéndose</span></li>
+      <li><span style="font-family: Calibri;"><b>loop:</b> Establece si al
+          acabar el vídeo, éste debe volver a empezar o no</span></li>
+      <li><span style="font-family: Calibri;"><b>muted:</b> Indica si el audio
+          se reproduce o se reproduce sin audio</span></li>
+      <li><span style="font-family: Calibri;"><b>preload:</b> Indica si el vídeo
+          se empieza a cargar cuando el navegador carga la página html</span></li>
+      <li><span style="font-family: Calibri;"><b>poster:</b> Da la posibilidad
+          de establecer una imagen (jpg, gif o png) como fotograma inicial del
+          video</span></li>
+    </ul>
+    <span style="font-family: Calibri;"> <br>
+      Por lo tanto, si utilizásemos todos los atributos, el código anterior
+      quedaría de la siguiente manera: Si queremos que el vídeo se pueda
+      visualizar desde cualquier navegador (que soporte HTML5), tenemos que
+      añadir a este código más posibilidades y por lo tanto debemos tener el
+      vídeo grabado en diferentes formatos.<br>
+      <br>
+      El código HTML completo quedaría así:</span><br>
+    <div class="codigo">
+      <pre>&lt;video width="800" height="600" controls autoplay loop poster="fotograma.png"&gt;
    &lt;source src="video.ogv" type="video/ogg"/&gt;
    &lt;source src="video.mp4" type="video/mp4"/&gt;
    &lt;source src="video.webm" type="video/webm"/&gt;
    &lt;p&gt;Tu navegador no soporta HTML5&lt;/p&gt;
 &lt;/video&gt;
-</pre>
-</div>
+</pre> </div>
+    <video style="display: block; margin-left: auto; margin-right: auto;" poster="img_html/portada_video.jpg"
 
-<table style="border-collapse: collapse; width: 100%; height: 260px;" border="1">
-<tbody>
-<tr style="height: 245px;">
-	<td style="width: 100%; height: 245px;">
-		<video style="display: block; margin-left: auto; margin-right: auto;" poster="img_html/portada_video.jpg" controls="controls" width="448" height="224">
-			<source src="video_html\Bird.mp4" type="video/mp4" />
-			<source src="video_html\Bird.webm" type="video/webm" />
-			<p>Your browser cannot play the provided video file.</p>
-		</video>
-  </td>
-</tr>
-</tbody>
-</table>
+      controls="controls" height="448" width="896"> <source src="video_html%5CBird.mp4"
 
-  
-  <!-- this is a comment -->
- </body>
+        type="video/mp4"> <source src="video_html%5CBird.webm" type="video/webm">
+      <source src="video_html%5CBird.ogv" type="video/ogg">
+      <p>Your browser cannot play the provided video file.</p>
+    </video>
+    <div id="titulo_peque">
+      <h2>Tarea 1.5</h2>
+    </div>
+    <p> <span style="font-family: Calibri;">Analizando los servicios que tiene
+        Microsoft Azure dentro del apartado de Inteligencia Artificial, he
+        encontrado diversos servicios aplicables en el campo de la publicación y
+        distribución. <br>
+      </span></p>
+    <p><span style="font-family: Calibri;"><b>Computer Vision</b>: Servicio que
+        analiza el contenido de imágenes y vídeos, lo que permite la extracción
+        automática de texto, etiquetar objetos, generar descripciones de
+        imágenes, moderar contenido y reconocer el movimiento de personas en
+        espacios físicos. <br>
+      </span></p>
+    <p><span style="font-family: Calibri;"><b>Custom Vision</b>: permite la
+        clasificación de imágenes y la detección de objetos. <br>
+      </span></p>
+    <p><span style="font-family: Calibri;"><b>Form Recognizer</b>: extrae con
+        precisión texto, los pares clave-valor, tablas y las estructuras de los
+        documentos.</span></p>
+    <p><span style="font-family: Calibri;"> <b>Language Understanding</b>:
+        comprende el lenguaje natural para interpretar los objetivos del usuario
+        y extrae información clave de frases conversacionales. <br>
+      </span></p>
+    <p><span style="font-family: Calibri;"><b>Content Moderator</b>: en pocas
+        palabras un sistema de censura automática. <br>
+      </span></p>
+    <p><span style="font-family: Calibri;"><b>API de Face</b>: Las
+        características incluyen la detección de caras que percibe
+        características y atributos faciales (como una mascarilla, gafas o la
+        ubicación de la cara) en una imagen y la identificación de una persona
+        por una coincidencia con su repositorio privado o por el identificador
+        de la foto. <br>
+      </span></p>
+    <p><span style="font-family: Calibri;"><b>Lectores inmersivos</b>: ayuda a
+        los usuarios de cualquier edad y capacidad de lectura con herramientas y
+        características de lectura, como la lectura leer en voz alta, la
+        traducción a diversos idiomas y el resaltado y otros elementos de diseño
+        para centrar la atención. </span></p>
+    <div id="titulo">
+      <h2>Ejercicio 2: Streaming de un video</h2>
+    </div>
+    <div id="titulo_peque">
+      <h2>Tarea 2.1</h2>
+    </div>
+    <p><span style="font-family: Calibri;"> Recortes de pantalla con el report
+        de Media Info: <br>
+      </span></p>
+    <img src="img_html/T21.png" alt="" title="ReportMediaInfo">
+    <div id="titulo_peque">
+      <h2>Tarea 2.2</h2>
+    </div>
+    <p> <img src="img_html/T22a.png" alt="" title="T22a"> <img src="img_html/T22b.png"
+
+        alt="" title="T22b"></p>
+    <div id="titulo_peque">
+      <h2>Tarea 2.3</h2>
+    </div>
+    <img src="img_html/T23a.png" alt="" title="T23a"> <img src="img_html/T23b.png"
+
+      alt="" title="T23b">
+    <div id="titulo_peque">
+      <h2>Tarea 2.4</h2>
+    </div>
+    <p> El receptor tarda unos segundos en parar y eso es debido a que consume
+      la información que dispone en el buffer de datos, este buffer sirve para
+      evitar contratiempos de cortes breves en la emisión por problemas de
+      paquetes perdidos en la transmisión que el emisor deberá repetir. Esto
+      permite que el espectador tenga una sensación de video fluida. Lo mismo
+      pasa al revés, cuando reiniciamos la emisión, esta tarda unos segundos en
+      aparecer ya que se tiene que llenar el buffer necesario por el receptor. </p>
+    <div id="titulo_peque">
+      <h2>Tarea 2.5</h2>
+    </div>
+    <img src="img_html/T25a.png" alt="" title="T25a" style="width: 960px; height: 540px;">
+    <br>
+    <img src="img_html/T25b.png" alt="" title="T25b" style="width: 960px; height: 540px;">
+    <p> Si la tasa de transferencia es de 1024Kbps y el video está codificado a
+      5000Kbps, la transcodificación que tiene que realizar el emisor es de
+      aproximadamente 4,9Kbps. </p>
+    <div id="titulo_peque">
+      <h2>Tarea 2.6</h2>
+    </div>
+    <p> <b style="color: #ffcc66;">Azure Media Services</b> es una plataforma
+      basada en la nube que permite construir soluciones de video en streaming
+      de banda ancha para mejorar la accesibilidad y la distribución de
+      contenidos, además analiza y lo transcribe para un mejor acceso a tiempo
+      real. </p>
+    <p>Servicio destinado a desarrolladores de aplicaciones, centro de llamadas,
+      agencias gubernamentales o empresas de entretenimiento, que ayuda a crear
+      aplicaciones que ofrecen experiencias multimedia de calidad excepcional a
+      grandes audiencias, en los navegadores y dispositivos móviles más
+      populares de la actualidad. </p>
+    <p>Permite crear una gran variedad de flujos de trabajo de medios en la
+      nube. Algunos ejemplos de lo que puede hacer con Media Services incluyen:
+    </p>
+    <ul>
+      <li><span style="font-family: Calibri;">Distribución de videos en varios
+          formatos para que puedan reproducirse en una amplia variedad de
+          navegadores y dispositivos. Tanto para la entrega de transmisión en
+          vivo como bajo demanda a varios clientes (dispositivos móviles, TV,
+          PC, etc.), para ello el contenido de video y audio debe codificarse y
+          empaquetarse adecuadamente. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Transmitir eventos y reuniones en
+          vivo a una gran audiencia en línea.</span></li>
+      <li><span style="font-family: Calibri;">Analiza videos grabados o
+          contenido de audio. Por ejemplo, para lograr una mayor satisfacción
+          del cliente, las organizaciones pueden extraer voz a texto para crear
+          índices y paneles de búsqueda. Luego, se puede aplicar inteligencia
+          para determinar quejas comunes y otros datos relevantes. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Crear un servicio de video por
+          suscripción y transmitir su contenido de forma protegida por DRM, en
+          el caso que un cliente necesite restringir el acceso y el uso de obras
+          protegidas por derechos de autor. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Entregar contenido sin conexión
+          para reproducirlo fuera desconectado de la red. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Habilite Azure CDN para lograr un
+          gran escalado para manejar mejor las altas cargas instantáneas. <br>
+        </span></li>
+    </ul>
+    <p><b style="color: #ffcc66;">Información general de Streaming en vivo</b> </p>
+    <p>Participan los siguientes componentes: </p>
+    <ul>
+      <li><span style="font-family: Calibri;">Una cámara que se usa para
+          difundir un evento. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Un codificador de vídeo en directo
+          que convierte las señales de la cámara en secuencias que se envían al
+          servicio de streaming. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Opcionalmente, varios
+          codificadores sincronizados en directo. Para determinados eventos en
+          directo críticos que demandan una disponibilidad y una calidad de
+          experiencia muy altas, se recomienda emplear codificadores redundantes
+          activo-activo con sincronización de hora para lograr una conmutación
+          por error perfecta sin pérdida de datos. <br>
+        </span></li>
+    </ul>
+    <p>El servicio permite hacer lo siguiente: </p>
+    <ul>
+      <li><span style="font-family: Calibri;">Recopilar contenido en directo
+          mediante varios protocolos. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">(Opcionalmente) Codificar la
+          transmisión en una transmisión con velocidad de bits adaptable. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Mostrar una vista previa de la
+          secuencia en vivo. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Registrar y almacenar el contenido
+          recibido para transmitirlo posteriormente (vídeo bajo demanda). <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Entregar el contenido mediante
+          protocolos de streaming comunes directamente a sus clientes. <br>
+        </span></li>
+    </ul>
+    <p><b style="color: #ffcc66;">Puntos de conexión de streaming, canales y
+        programas</b> </p>
+    <p>En Azure Media Services, los canales, programas y extremos de streaming
+      controlan todas las funcionalidades de streaming en vivo, incluidas la
+      recopilación, el formato, DVR, la seguridad, la escalabilidad y la
+      redundancia. Un canal representa una canalización para procesar contenido
+      de streaming en vivo y permite recibir transmisiones de entrada en directo
+      de la siguiente manera: </p>
+    <ul>
+      <li><span style="font-family: Calibri;">Un codificador local en directo
+          envía contenido RTMP o Smooth Streaming (MP4 fragmentado) con
+          velocidades de bits múltiples al canal que está configurado por la
+          entrega de paso a través. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Un codificador en directo local
+          envía una secuencia de una sola velocidad de bits al canal que está
+          habilitado para realizar codificación en directo. Después, el canal
+          codifica en directo la secuencia entrante de una sola velocidad de
+          bits en una secuencia de vídeo de varias velocidades de bits
+          (adaptable). Bajo demanda se entrega la secuencia a los clientes. <br>
+        </span></li>
+    </ul>
+    <p>Puede especificar la forma en que el canal recibe el flujo de entrada y
+      si quiere que realice la codificación en directo de la secuencia, para
+      ello tienes dos opciones: </p>
+    <ul>
+      <li><span style="font-family: Calibri;">Ninguna (paso a través):
+          especifique este valor si piensa usar un codificador en directo local
+          que genere una secuencia de varias velocidades de bits (una
+          transmisión de paso a través). En este caso, el flujo entrante pasa
+          hasta la salida sin codificación alguna. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Estándar: codifica transmisiones
+          en directo con una sola velocidad de bits en transmisiones de varias
+          velocidades de bits. Este método es más económico para el escalado
+          vertical rápido para eventos poco frecuentes. Tenga en cuenta que hay
+          un impacto en la facturación para la codificación en directo y debe
+          recordar que salir de un canal de codificación en directo en el estado
+          "En ejecución" supondrá un coste adicional de facturación. Se
+          recomienda detener inmediatamente sus canales de ejecución después que
+          se complete su evento de transmisión en directo para evitar cargos por
+          hora adicionales. <br>
+        </span></li>
+    </ul>
+    <p><b style="color: #ffcc66;">Estados del canal y cómo se asignan al modo de
+        facturación</b> </p>
+    <p>El estado actual de un canal. Los valores posibles son: </p>
+    <ul>
+      <li><span style="font-family: Calibri;">Detenido. Este es el estado
+          inicial del canal después de su creación (a menos que seleccionara el
+          inicio automático en el portal.) No se produce ninguna facturación en
+          este estado. En este estado, se pueden actualizar las propiedades del
+          canal, pero no se permite el streaming. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Iniciando. El canal se está
+          iniciando. No se produce ninguna facturación en este estado. No se
+          permiten actualizaciones ni streaming durante este estado. Si se
+          produce un error, el canal vuelve al estado Detenido. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">En ejecución. El canal es capaz de
+          procesar secuencias en directo. Está ahora el uso de facturación. Debe
+          detener el canal para evitar más facturación. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Deteniéndose. El canal se está
+          deteniendo. No se produce facturación en este estado transitorio. No
+          se permiten actualizaciones ni streaming durante este estado. <br>
+        </span></li>
+      <li><span style="font-family: Calibri;">Eliminando. El canal se está
+          eliminando. No se produce facturación en este estado transitorio. No
+          se permiten actualizaciones ni streaming durante este estado. </span></li>
+    </ul>
+    <p><br>
+    </p>
+  </body>
 </html>
