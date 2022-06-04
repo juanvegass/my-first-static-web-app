@@ -1,0 +1,96 @@
+h1 {
+	font-family: 150% Calibri ; 
+	src: url(Calibri .ttf); 
+}
+h2 {
+	font-family: 125% Calibri ; 
+	src: url(Calibri .ttf); 
+}
+p {
+	font-family: Calibri ; 
+	src: url(Calibri .ttf); 
+}
+
+#titulo{
+	position:relative;
+	font-family:font1_negrita;
+	font-size:30px;
+	border:0px;
+	border-radius:6px;
+	background:#1162ac;
+	color:white;
+	margin-top:42px;
+	margin-bottom:20px;
+	padding:9px 11px 11px 37px;
+	background-image:url('../img_html/estrella.png');
+	background-size:49px;
+	background-position:-24px 2px;
+	background-repeat:no-repeat;
+	line-height:28px;
+}
+#titulo_peque{
+	background:url('../img_html/flecha_derecha.png');
+	background-repeat:no-repeat;
+	background-position:5px 11px;
+	width:490px;
+	font-family:font1_negrita;
+	font-size:12px;
+	font-weight:bold;
+	color:#1162ac;
+	padding-left:15px;
+	margin-bottom:15px;
+	margin-top:40px;
+	margin-bottom:18px;
+}
+#celda1{
+	width:68%;
+	height:52px;
+	border-radius:3px;
+	padding-top:10px;
+	padding-right:10px;
+	background-color:#B1C5D8;
+	margin-top:6px;
+	color:black;
+}
+#imagen1{
+	width:85px;
+	padding-top:2px;
+	padding-left:3px;
+	float:left;
+}
+#imagen2{
+	width: 75px;
+	padding-left:10px;
+	float:left;
+
+}
+.codigo{
+	position:relative;	
+	display:inline-block;
+	font-size:16px;
+	padding:3px 25px 3px 11px;
+	margin-top:15px;
+	margin-bottom:4px;
+	border-radius:6px;	
+	box-shadow:inset 0px 0px 15px #B9C1CB, 0px 0px 5px #ADB8C4;
+	background:#E3E6E9;
+	overflow:auto;
+	border:1px solid gray;
+	font-family:monospace;
+}
+pre {
+    white-space: pre-wrap;
+}
+.codigo_visualizado{
+	position:relative;	
+	display:inline-block;	
+	font-size:16px;
+	padding:14px 29px 8px 19px;
+	margin-top:17px;
+	margin-bottom:4px;
+	border-radius:6px;	
+	box-shadow:inset 0px 0px 9px #B9C1CB;
+	background:white;
+	overflow:auto;
+	border:1px solid gray;	
+}
